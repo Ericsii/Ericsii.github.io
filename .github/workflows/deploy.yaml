@@ -8,41 +8,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
-
-      - name: Set Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: '14'
-
-      # Cache node modules to accelerate
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
-      - name: Use yarn cache
-        uses: actions/cache@v2
-        id: yarn-cache
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-
-      - name: Install dependencies
-        run: yarn install --prefer-offline --frozen-lockfile
-
-      - name: Set up environment
+      - name: Checkout repository and submodules
+          uses: actions/checkout@v2
+          with:
+            submodules: recursive
+      
+      - name: Build and Deploy
+        uses: theme-keep/hexo-deploy-github-pages-action@master
         env:
-          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
-        run: |
-          sudo timedatectl set-timezone "Asia/Shanghai"
-          mkdir -p ~/.ssh
-          echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Deploy
-        run: |
-          npx hexo clean && npx hexo generate && gulp && npx hexo deploy
+          # The repository the action should deploy to.
+          PUBLISH_REPOSITORY: Ericsii/Ericsii.github.io
+
+          BRANCH: gh-pages
