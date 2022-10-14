@@ -4,11 +4,11 @@
 
 # Site
 title: CClock
-subtitle: ''
-description: 'CClock Ericsii's blog'
+subtitle: 'tik tok'
+description: '原来我们都是夏虫，且一直都是'
 keywords:
 author: Eric Feng
-language: zh
+language: zh-CN
 timezone: ''
 
 # URL
@@ -40,7 +40,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -102,4 +102,6 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: 'git'
+  repository: git@github.com:Ericsii/Ericsii.github.io.git
+  branch: gh-page
