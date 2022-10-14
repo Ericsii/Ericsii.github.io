@@ -20,4 +20,4 @@ jobs:
         PUBLISH_REPOSITORY: Ericsii/Ericsii.github.io
 
         # The branch the action should deploy to.
-        BRANCH: gh-page
+        BRANCH: gh-pages

@@ -104,4 +104,4 @@ theme: butterfly
 deploy:
   type: 'git'
   repository: git@github.com:Ericsii/Ericsii.github.io.git
-  branch: gh-page
+  branch: gh-pages
