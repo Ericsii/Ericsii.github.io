@@ -9,9 +9,9 @@ jobs:
 
     steps:
       - name: Checkout repository and submodules
-          uses: actions/checkout@v2
-          with:
-            submodules: recursive
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
       
       - name: Build and Deploy
         uses: theme-keep/hexo-deploy-github-pages-action@master
