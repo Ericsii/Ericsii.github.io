@@ -113,3 +113,22 @@ markdown_it_plus:
       enable: true
       options:
         strict: false #禁用掉 KaTeX 在命令行上输出的宂长的警告信息
+
+feed:
+  enable: true
+  type: rss2
+  path: rss2.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 500
+  content_limit_delim: ' '
+  order_by: -date
+  icon: /images/favicon.ico
+  autodiscovery: true
+  template:
+
+search:
+  path: search.xml
+  field: post
+  content: true
