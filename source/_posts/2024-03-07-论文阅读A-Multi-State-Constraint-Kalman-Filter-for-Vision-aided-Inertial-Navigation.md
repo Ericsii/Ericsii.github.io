@@ -16,7 +16,7 @@ katex: true
 
 # [MSCKF] A Multi-State Constraint Kalman Filter for Vision-aided Inertial Navigation
 
-这篇06年的文章是提出了一种新的几何约束，将3D feature的位置信息从卡尔曼滤波中的观测模型中去除，从而减少计算复杂度。
+这篇06年的文章提出了一种新的几何约束，将3D feature的位置信息从卡尔曼滤波中的观测模型中去除，从而减少计算复杂度。
 
 ## Related works
 
