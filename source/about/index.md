@@ -2,3 +2,28 @@
 title: 關於
 date: 2022-10-14 20:24:23
 ---
+
+![GitHub followers](https://img.shields.io/github/followers/ericsii?logo=Github) ![GitHub User's stars](https://img.shields.io/github/stars/ericsii?affiliations=OWNER%2CCOLLABORATOR&label=all%20stars&logo=Github)
+
+I'm Yunlong Feng(冯云龙), a graduate student at MPL(Mobile Perception Lab), ShanghaiTech University.
+
+### 🎓 Experience:
+- Master, Computer Science & Technology, Mobile Perception Lab, ShanghaiTech University (2023.09 ~ now)
+- Internship, Institute for AI Industry Research, Tsinghua University (2022.06 ~ 2022.12)
+- Bachelor, Computer Science & Technology, Sichuan University (2019 ~ 2023)
+
+### 🔭 Interests: 
+- Simultaneous localization and mapping(SLAM) in mobile robots.
+
+### 🛠️ Programming skills
+* C/C++
+* Python
+* ROS/ROS2
+
+[![Ericsii's GitHub stats](https://github-readme-stats.vercel.app/api?username=Ericsii&count_private=true&show_icons=true)](https://github.com/Ericsii)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Ericsii)](https://github.com/Ericsii)
+
+### 📖 Publication
+
+- Block-Map-Based Localization in Large-Scale Environment, in Proceedings of the IEEE International Conference on Robotics and Automation (ICRA), 2024, 4th author.
