@@ -16,17 +16,17 @@ katex: true
 
 # [MSCKF] A Multi-State Constraint Kalman Filter for Vision-aided Inertial Navigation
 
-这篇06年的最大的贡献是提出了一种新的几何约束，将3D feature的位置信息从卡尔曼滤波中的观测模型中去除，从而减少计算复杂度。
+这篇06年的文章提出了一种新的建立几何约束的方式，将3D feature的位置信息从卡尔曼滤波中的观测模型中去除，从而减少计算复杂度。
 
 ## Related works
 
 > the main limitation of SLAM is its high computational complexity; properly treating these correlations is computationally costly, and thus performing vision-based SLAM in environments with thousands of features remains a challenging problem.
 
-该文章也采用了部分使用图像之间对极约束的方法^[Diel, DavidD. Stochastic Constraints for Vision-Aided Inertial Navigation. Jan. 2005.]^[Bayard, D. S., and P. B. Brugarolas. “An Estimation Algorithm for Vision-Based Exploration of Small Bodies in Space.” Proceedings of the 2005, American Control Conference, 2005., 2005, https://doi.org/10.1109/acc.2005.1470719.]，不同的是该文章的 **MSCKF** 可以在多个相机 pose 之间计算约束。
+该文章也采用了图像之间对极约束的方法^[Diel, DavidD. Stochastic Constraints for Vision-Aided Inertial Navigation. Jan. 2005.]^[Bayard, D. S., and P. B. Brugarolas. “An Estimation Algorithm for Vision-Based Exploration of Small Bodies in Space.” Proceedings of the 2005, American Control Conference, 2005., 2005, https://doi.org/10.1109/acc.2005.1470719.]，不同的是 **MSCKF** 可以在多个相机 pose 之间计算约束。
 
 > one fundamental difference is that our algorithm can express constraints between multiple camera poses, and can thus attain higher estimation accuracy, in cases where the same feature is visible in more than two images.
 
-同样的多个相机 pose 同时优化的方法^[Eustice, Ryan, et al. “Visually Navigating the RMS Titanic with SLAM Information Filters.” Robotics: Science and Systems I, 2016, https://doi.org/10.15607/rss.2005.i.008.]，一个很大的缺点是当单个 feature 被多个图像观测时，其中多 pose 之间的约束被忽略了导致信息的缺失。
+同样的多个相机 pose 同时优化的方法^[Eustice, Ryan, et al. “Visually Navigating the RMS Titanic with SLAM Information Filters.” Robotics: Science and Systems I, 2016, https://doi.org/10.15607/rss.2005.i.008.]，一个很大的缺点是当单个 feature 被多个图像观测时，其中多 pose 之间的约束被忽略了导致信息缺失。
 
 > Moreover, in contrast to SLAM-type approaches, it does not require the inclusion of the 3D feature positions in the filter state vector, but still attains optimal pose estimation. As a result of these properties, the described algorithm is very efficient.
 
@@ -71,7 +71,7 @@ $$\begin{aligned}&\mathbf{\omega}_m=\mathbf{\omega}+\mathbf{C}(_G^I\bar{q})\math
 
 $C(\cdot)$是旋转矩阵。
 
-将代入每个状态的均值代入系统方程：
+将每个状态概率分布的均值代入系统方程：
 
 $$^I_G\dot{\hat{\bar{q}}}=\frac{1}{2}\boldsymbol{\Omega}(\hat{\boldsymbol{\omega}})_G^I\hat{\hat{q}},\quad\dot{\hat{\boldsymbol{b}}}_g=\boldsymbol{0}_{3\times1}$$
 
