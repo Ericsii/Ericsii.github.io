@@ -896,7 +896,7 @@ CDN:
   custom_format:
 
   option:
-    busuanzi: https://cdn.jsdelivr.net/gh/Pil0tXia/busuanzi-modified/busuanzi.pure.mini.js
+    # busuanzi: https://cdn.jsdelivr.net/gh/Pil0tXia/busuanzi-modified/busuanzi.pure.mini.js
     # main_css:
     # main:
     # utils:
