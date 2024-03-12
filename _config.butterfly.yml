@@ -310,7 +310,7 @@ valine:
   appId: nvlMloRGrWjjm3hKeiGFYUqS-MdYXbMMI # leancloud application app id
   appKey: 5AAnIG7MhLdz98zBbJbZ5Edk # leancloud application app key
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
-  serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+  serverURLs: https://nvlmlorg.api.lncldglobal.com # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   bg: # valine background
   visitor: false
   option:
