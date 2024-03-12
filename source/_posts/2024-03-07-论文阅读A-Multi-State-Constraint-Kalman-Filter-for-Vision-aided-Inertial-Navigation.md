@@ -71,7 +71,7 @@ $$\begin{aligned}&\mathbf{\omega}_m=\mathbf{\omega}+\mathbf{C}(_G^I\bar{q})\math
 
 $C(\cdot)$是旋转矩阵。
 
-将代入每个状态的均值代入系统方程：
+将每个状态概率分布的均值代入系统方程：
 
 $$^I_G\dot{\hat{\bar{q}}}=\frac{1}{2}\boldsymbol{\Omega}(\hat{\boldsymbol{\omega}})_G^I\hat{\hat{q}},\quad\dot{\hat{\boldsymbol{b}}}_g=\boldsymbol{0}_{3\times1}$$
 
