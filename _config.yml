@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://ericsii.github.io
+url: https://cclock.me
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -132,3 +132,11 @@ search:
   path: search.xml
   field: post
   content: true
+
+sitemap:
+  path: 
+    - sitemap.xml
+    - sitemap.txt
+  rel: false
+  tags: true
+  categories: true
