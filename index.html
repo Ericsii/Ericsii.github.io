@@ -1,0 +1,388 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>CClock - tik tok</title><meta name="author" content="Eric Feng"><meta name="copyright" content="Eric Feng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="原来我们都是夏虫，且一直都是"><link rel="shortcut icon" href="/images/favicon.ico"><link rel="canonical" href="https://cclock.me/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'CClock',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-05-11 09:56:25'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/rss2.xml" title="CClock" type="application/rss+xml">
+</head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+document.addEventListener('pjax:send', () => {
+  Pace.restart()
+})
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/blue/pace-theme-flash.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://github.com/ericsii.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">9</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首頁</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-compass"></i><span> 目錄</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 時間軸</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 標籤</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友鏈</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 關於</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/images/ae86.gif')"><nav id="nav"><span id="blog-info"><a href="/" title="CClock"><span class="site-name">CClock</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首頁</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-compass"></i><span> 目錄</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 時間軸</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 標籤</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友鏈</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 關於</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">CClock</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/Ericsii" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:ericc_feng@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/./rss2.xml" target="_blank" title="RSS"><i class="fas fa-solid fa-rss"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/03/07/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BBA-Multi-State-Constraint-Kalman-Filter-for-Vision-aided-Inertial-Navigation/" title="论文阅读A Multi-State Constraint Kalman Filter for Vision-aided Inertial Navigation">论文阅读A Multi-State Constraint Kalman Filter for Vision-aided Inertial Navigation</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-03-07T16:17:18.000Z" title="发表于 2024-03-07 16:17:18">2024-03-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%90%86%E8%AE%BA/">理论</a></span></div><div class="content"> [MSCKF] A Multi-State Constraint Kalman Filter for Vision-aided Inertial Navigation
+这篇06年的文章提出了一种新的建立几何约束的方式，将3D feature的位置信息从卡尔曼滤波中的观测模型中去除，从而减少计算复杂度。
+ Related works
+
+the main limitation of SLAM is its high computational complexity; properly treating these correlations is computationally costly, and thus performing vision-based SLAM in environments with thousands of features remains a challenging problem.
+
+该文章也采用了图像之间对极约束的方法[1][2]，不同的是 MSCKF 可以在多个相机 pose 之间计算约束。
+
+one fundamental difference is  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/04/C-%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/" title="C++工厂模式">C++工厂模式</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-04-04T00:46:24.000Z" title="发表于 2023-04-04 00:46:24">2023-04-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BC%80%E5%8F%91/">开发</a></span></div><div class="content"> C++工厂模式
+
+本文代码demo开源：https://github.com/Ericsii/factory_pattern
+
+最近设计RoboMaster机器人的通讯协议中，为了模块化协议开发模块打算使用工厂模式自动匹配处理不同数据帧的代码。
+ 工厂模式
+工厂模式个人理解，一个工厂对象（通常为单例）用于生成一系列不同的对象，这些生成的对象往往实现不同的业务。对应到我们的通讯协议的实现中，不同的帧解析对象去解析不同的数据帧。每新增一个自定义解析直接新增一个类而不需要对已有代码有侵入性修改；而且对于上层的使用者而言是感知不到不同的对象是如何被创建的。
+ 具体实现
+
+以下代码来自与即将开源的机器人算法框架
+
+ 帧处理类设计
+根据我们的需求，消息帧处理基类可以写成：
+1234567891011121314151617181920// process_interface.hppclass ProcessInterface&#123;public:  using Packet = std::variant&lt;rmoss_base::FixedPacket16, rmoss_base::Fi ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2020/10/16/%E5%9B%BE%E5%83%8F%E5%8F%98%E6%8D%A2/" title="[图像处理]图片的伸缩变换">[图像处理]图片的伸缩变换</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-16T00:00:00.000Z" title="发表于 2020-10-16 00:00:00">2020-10-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%90%86%E8%AE%BA/">理论</a></span></div><div class="content"> [图像处理]图片的伸缩变换
+ 要求
+ 编写程序，从标准输入读取图片的四个坐标和 bmp 格式图片，将这四个坐标框出的四边形拉伸成 224*224 的正方形，显示，并以 bmp 格式输出到标准输出。
+ 思路
+ 给定图像的四个坐标 {xi,yi},(i=1,2,3,4)\{x_i,y_i\} ,(i=1,2,3,4){xi​,yi​},(i=1,2,3,4) 并且已知每个源坐标经变换后的对应坐标 {xi′,yi′},(i=1,2,3,4)\{ x&#x27;_i,y&#x27;_i \} ,(i=1,2,3,4){xi′​,yi′​},(i=1,2,3,4)
+ 普通线性变换
+想到的第一个方法，对源坐标进行线性变换
+[a11a12a21a22][xy]=[x′y′]\begin{bmatrix} a_{11} &amp; a_{12} \\ a_{21} &amp; a_{22} \end{bmatrix}
+\begin{bmatrix} x \\ y \end{bmatrix} =
+\begin{bmatrix} x&#x27;\\ y&#x27; \end{bmatrix}[a11​a ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2020/10/15/SLAM/" title="SLAM环境搭建">SLAM环境搭建</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-15T00:00:00.000Z" title="发表于 2020-10-15 00:00:00">2020-10-15</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BC%80%E5%8F%91/">开发</a></span></div><div class="content"> SLAM环境搭建
+Ubuntu18.04 系统下,SLAM必要环境搭建
+OpenCV，Eigen3，Sophus，PCL，Ceres，g2o
+
+ OpenCV 安装
+ 安装依赖：
+12sudo apt-get install build-essentialsudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+可选依赖项
+1sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
+ 编译安装OpenCV
+ 下载OpenCV源码
+方法1：
+OpenCV官网下载对应版本OpenCV的源代码，博主使用的是3.4.8
+可在Github上选择对应release版本下载。并下载对应版本的opencv_contrib，方法和之前一样。
+方法2：
+直接使用 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2020/10/15/perceptron/" title="[机器学习] 感知机(Perceptron)&amp;支持向量机(SVM)">[机器学习] 感知机(Perceptron)&amp;支持向量机(SVM)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-15T00:00:00.000Z" title="发表于 2020-10-15 00:00:00">2020-10-15</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%90%86%E8%AE%BA/">理论</a></span></div><div class="content"> 感知机(Perceptron)
+在特征空间中找到一个超平面w^Tx+b=0，使用该超平面将样本空间分割成两个部分，样本中属于这两个部分的点分别属于不同的正负两个类别。其中最为关键的部分应该为超平面的确定和优化。但是感知机对于线性不可分的样本并不能找到较好的决策面来分割样本，同时感知机所生成的超平面不一定是样本的最优分割。
+决策面为：Wx+b=0Wx+b=0Wx+b=0
+样本到决策面的距离：ri=WTxi+b∣∣w∣∣r_i=\frac{W^Tx_i+b}{\left|\left|w\right|\right|}ri​=∣∣w∣∣WTxi​+b​
+计算：略
+ 支持向量机(SVM)
+普通的SVM只对线性可分的数据集有比较好的结果，对于线性不可分的数据和普通的感知机一样也没有特别好的表现。同时经典的SVM只是一种二分类的方法，而实际环境中往往需要进行多分类，这时可以通过多个SVM组合来完成多分类，使用SVM决策树来解决问题。
+SVM的original problem：
+min⁡w,b12∥w∥s.t.    1−yi(wxi + b) ≤ 0, i = 1,2...N\min\limits ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2020/10/15/pytorch/" title="[深度学习]pytorch实现简单线性回归">[深度学习]pytorch实现简单线性回归</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-15T00:00:00.000Z" title="发表于 2020-10-15 00:00:00">2020-10-15</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%90%86%E8%AE%BA/">理论</a></span></div><div class="content">PS：本文中代码在jupyter中实现
+ 前置工作
+ 必要包含库
+12345import torchfrom IPython import displayfrom matplotlib import pyplot as pltimport numpy as npimport random
+ 生成随机数据集
+12345678num_inputs = 2 # 样本维数num_examples = 1000 # 样本大小true_w = [2, -3.4] # 样本实际参数true_b = 4.2features = torch.tensor(np.random.normal(0, 1, (num_examples, num_inputs)), dtype=torch.float) # 生成特征值labels = true_w[0] * features[:, 0] + true_w[1] * features[:, 1] + true_b # 生成标签labels += torch.tensor(np.random.normal(0, 0.01, size=labels.size()),  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2020/06/15/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90/" title="[数值分析] python代码模板">[数值分析] python代码模板</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-06-15T00:00:00.000Z" title="发表于 2020-06-15 00:00:00">2020-06-15</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BC%80%E5%8F%91/">开发</a></span></div><div class="content">数值分析课，作业中算法代码模板。已结课，之后随缘更新
+仅供个人使用，转载请注明源地址。
+更新日志：
+2020.05.05 添加椭圆坐标生成函数、非线性方程求解方法
+2020.06.15 添加A = LU分解和PA = LU分解方法
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138139140141142143144145146147148149150151152153154155156157158159160161162163164 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2018/11/01/%E9%9A%8F%E6%9C%BA%E5%8C%96%E7%AE%97%E6%B3%95/" title="随机化算法">随机化算法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-11-01T00:00:00.000Z" title="发表于 2018-11-01 00:00:00">2018-11-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%81%9A%E9%A2%98%E5%BD%92%E6%A1%A3/">做题归档</a></span></div><div class="content"> 随机化算法在OI中的应用
+好像之前有个论文就是这个标题不过无所谓了
+又重新回来学了几天OI把之前看的模拟退火看了一下(可惜去年NOIP)，又看了看网上dalao们的博客学习了一点遗传算法想来写一些东西。于是干脆把学过的两个随机算法都写一写
+
+ps:模拟退火的笔记是以前写的
+
+ 模拟退火
+
+个人觉得模拟退火更适合在OI赛场上用(因为它短啊！！)
+
+退火算法其实是一种随机化算法，拥有一个很稳定(玄学)的时间复杂度，取决于你所定的初温和降温次数(这两个之后会讲)
+我们可以想象一桶水，我们把他从200°C逐渐降低到-100°C，这桶水中的水分子会渐渐从无序状态趋于稳定，等到整个桶结冰之后整个系统的状态就会稳定下来。模拟退火算法也是这样,对于程序我们每次会有一个初温，伴随着整个温度的降低每次取到的近似最优解也会趋于稳定，多次从高温降到低温后取得的近似最优解也就是最优解
+实际上就是是运用了物理上的热力学的部分知识来解计算机中的问题
+在热力学中的退火过程大致是变温物体缓慢降温而达到分子之间能量最低的状态。设热力学系统 SSS 中有有限个且离散的 nnn 个状态，状态 iii 的能量为 EiE_{i ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2018/10/15/noip-gift/" title="[noip模拟赛] 礼物gift">[noip模拟赛] 礼物gift</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-10-15T00:00:00.000Z" title="发表于 2018-10-15 00:00:00">2018-10-15</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%81%9A%E9%A2%98%E5%BD%92%E6%A1%A3/">做题归档</a></span></div><div class="content"> [noip模拟赛] 礼物gift
+ Description
+
+夏川的生日就要到了。作为夏川形式上的男朋友,季堂打算给夏川买一些生日礼物。
+
+
+商店里一共有种礼物。夏川每得到一种礼物,就会获得相应喜悦值Wi(每种礼物的喜悦值不能重复获得)。
+每次,店员会按照一定的概率Pi(或者不拿出礼物),将第i种礼物拿出来。
+季堂每次都会将店员拿出来的礼物买下来。没有拿出来视为什么都没有买到,也算一次购买。
+众所周知,白毛切开都是黑的。所以季堂希望最后夏川的喜悦值尽可能地高。
+求夏川最后最大的喜悦值是多少,并求出使夏川得到这个喜悦值,季堂的期望购买次数。
+ Input
+第一行,一个整数N,表示有N种礼物。
+接下来N行,每行一个实数Pi和正整数Wi,表示第i种礼物被拿出来的概率和可以获得喜悦值。
+Output
+第一行,一个整数表示可以获得的最大喜悦值。
+第二行,一个实数表示获得这个喜悦值的期望购买次数,保留3位小数。
+Sample Input
+3
+0.1 2
+0.2 5
+0.3 7
+Sample Output
+14
+12.167
+ HINT
+对于10%的数据,N=1N=1N=1
+对于30%的数据,N≤ ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2018/02/25/shoi2017/" title="[BZOJ4872] [Shoi2017]分手是祝愿">[BZOJ4872] [Shoi2017]分手是祝愿</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-02-25T00:00:00.000Z" title="发表于 2018-02-25 00:00:00">2018-02-25</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%81%9A%E9%A2%98%E5%BD%92%E6%A1%A3/">做题归档</a></span></div><div class="content"> [BZOJ4872] [Shoi2017]分手是祝愿
+ Description
+
+Zeit und Raum trennen dich und mich.
+
+时空将你我分开。B 君在玩一个游戏，这个游戏由 n 个灯和 n 个开关组成，给定这 n 个灯的初始状态，下标为从 1 到 n 的正整数。每个灯有两个状态亮和灭，我们用 1 来表示这个灯是亮的，用 0 表示这个灯是灭的，游戏的目标是使所有灯都灭掉。但是当操作第 i 个开关时，所有编号为 i 的约数（包括 1 和 i）的灯的状态都会被改变，即从亮变成灭，或者是从灭变成亮。
+B 君发现这个游戏很难，于是想到了这样的一个策略，每次等概率随机操作一个开关，直到所有灯都灭掉。这个策略需要的操作次数很多， B 君想到这样的一个优化。如果当前局面，可以通过操作小于等于 k 个开关使所有灯都灭掉，那么他将不再随机，直接选择操作次数最小的操作方法（这个策略显然小于等于 k 步）操作这些开关。B 君想知道按照这个策略（也就是先随机操作，最后小于等于 k 步，使用操作次数最小的操作方法）的操作次数的期望。这个期望可能很大，但是 B 君发现这个期望乘以  ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://github.com/ericsii.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Eric Feng</div><div class="author-info__description">原来我们都是夏虫，且一直都是</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">9</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Ericsii"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Ericsii" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:ericc_feng@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/./rss2.xml" target="_blank" title="RSS"><i class="fas fa-solid fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到 Ericsii 的 Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/07/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BBA-Multi-State-Constraint-Kalman-Filter-for-Vision-aided-Inertial-Navigation/" title="论文阅读A Multi-State Constraint Kalman Filter for Vision-aided Inertial Navigation">论文阅读A Multi-State Constraint Kalman Filter for Vision-aided Inertial Navigation</a><time datetime="2024-03-07T16:17:18.000Z" title="发表于 2024-03-07 16:17:18">2024-03-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/04/04/C-%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/" title="C++工厂模式">C++工厂模式</a><time datetime="2023-04-04T00:46:24.000Z" title="发表于 2023-04-04 00:46:24">2023-04-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2020/10/16/%E5%9B%BE%E5%83%8F%E5%8F%98%E6%8D%A2/" title="[图像处理]图片的伸缩变换">[图像处理]图片的伸缩变换</a><time datetime="2020-10-16T00:00:00.000Z" title="发表于 2020-10-16 00:00:00">2020-10-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2020/10/15/SLAM/" title="SLAM环境搭建">SLAM环境搭建</a><time datetime="2020-10-15T00:00:00.000Z" title="发表于 2020-10-15 00:00:00">2020-10-15</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2020/10/15/perceptron/" title="[机器学习] 感知机(Perceptron)&amp;支持向量机(SVM)">[机器学习] 感知机(Perceptron)&amp;支持向量机(SVM)</a><time datetime="2020-10-15T00:00:00.000Z" title="发表于 2020-10-15 00:00:00">2020-10-15</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%81%9A%E9%A2%98%E5%BD%92%E6%A1%A3/"><span class="card-category-list-name">做题归档</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%BC%80%E5%8F%91/"><span class="card-category-list-name">开发</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%90%86%E8%AE%BA/"><span class="card-category-list-name">理论</span><span class="card-category-list-count">4</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/SLAM/" style="font-size: 1.3em; color: #99a1ac">SLAM</a> <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" style="font-size: 1.3em; color: #99a1ac">机器学习</a> <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" style="font-size: 1.1em; color: #999">设计模式</a> <a href="/tags/%E7%BC%96%E7%A8%8B/" style="font-size: 1.1em; color: #999">编程</a> <a href="/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/" style="font-size: 1.1em; color: #999">图像处理</a> <a href="/tags/OI%E7%AE%97%E6%B3%95/" style="font-size: 1.5em; color: #99a9bf">OI算法</a> <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" style="font-size: 1.1em; color: #999">深度学习</a> <a href="/tags/C/" style="font-size: 1.3em; color: #99a1ac">C++</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 1.3em; color: #99a1ac">算法</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/03/"><span class="card-archive-list-date">三月 2024</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">四月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/06/"><span class="card-archive-list-date">六月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2018/11/"><span class="card-archive-list-date">十一月 2018</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2018/10/"><span class="card-archive-list-date">十月 2018</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2018/02/"><span class="card-archive-list-date">二月 2018</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2017/09/"><span class="card-archive-list-date">九月 2017</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">11</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2022-10-15T00:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-05-11T09:56:24.900Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Eric Feng</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  getScript('https://sdk.jinrishici.com/v2/browser/jinrishici.js').then(() => {
+    jinrishici.load(result =>{
+      if (true) {
+        const sub = []
+        const content = result.data.content
+        sub.unshift(content)
+        typedJSFn.init(sub)
+      } else {
+        document.getElementById('subtitle').textContent = result.data.content
+      }
+    })
+  })
+}
+typedJSFn.run(subtitleType)
+</script></div><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
